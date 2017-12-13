@@ -55,11 +55,10 @@ table {
 	box-sizing: border-box;
 }
 
-header{
-	width:100%;
-	margin-top:2%;
+.flexwrapper{
+	display: flex;
+	flex-wrap: wrap;		
 }
-
 
 .left{
 	float: left;
@@ -69,21 +68,115 @@ header{
 	float: right;
 }
 
+.center{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* 
+	Header
+*/
+
+header{
+	display: flex;
+	flex-wrap: wrap;
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:2%;
+	order:0;
+}
 
 #logo{
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
+	order: 0;
+
 }
+
+#name{
+	order: 1;
+	text-align: center;
+}
+
+hr { 
+	width:90%;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-style: inset;
+    border-width: 1px;
+	order: 2;
+}
+
+
+/* 
+	Main Photo
+*/
+
+
+#topPhoto{
+	order:2;
+}
+#topPhoto img{
+	width: 90vw;
+}
+
+/* 
+	Featured Work
+*/
+
+#featuredwork{
+	order:3;
+	width: 90vw;
+	display: flex;
+	flex-wrap: wrap;
+	text-align:center;
+	margin-top:2vh;
+}
+
+#featuredwork h1{
+	display: block;
+	order: 0;
+}
+
+#featuredwork img{
+	width: 90vw;
+}
+
+#featuredwork section{
+	margin-top: 2vh;
+	marin-bottom: 2vh;
+}
+
+/* 
+	Font Styles
+*/
 
 h1{
-	display:block;
+	font-family: "Bookman Old Style";
+	font-size: 2em;
 }
-#name{
-	margin-left:auto;
-	margin-right:auto;
+
+h2{
+	font-family: "Bookman Old Style";
+	font-size: 1em;
 }
 
 
+
+/* 
+	Medium screens 
+*/
+@media all and (min-width: 600px) {
+	h1{
+		font-size:3em;
+	}
+}
+
+/* 
+	Large screens 
+*/
+@media all and (min-width: 800px) {
+
+}
 
 
