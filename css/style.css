@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,64 +45,63 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
 /* 
 	Khaled Omar
 */
-*{
+* {
 	box-sizing: border-box;
 }
 
-.flexwrapper{
+.flexwrapper {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.left{
+.left {
 	float: left;
 }
 
-.right{
+.right {
 	float: right;
 }
 
-.center{
-	margin-left:auto;
-	margin-right:auto;
+.center {
+	margin-left: auto;
+	margin-right: auto;
 }
+
 
 /* 
 	Header
 */
 
-header{
+header {
 	display: flex;
 	flex-wrap: wrap;
-	width:90%;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:2%;
-	order:0;
-}
-
-#logo{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
 	order: 0;
-
 }
 
-#name{
+#logo {
+	order: 0;
+	display: none;
+}
+
+#name {
 	order: 1;
 	text-align: center;
 }
 
-hr { 
-	width:90%;
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    border-style: inset;
-    border-width: 1px;
+hr {
+	width: 90vw;
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	border-style: inset;
+	border-width: 1px;
 	order: 2;
 }
 
@@ -112,94 +110,119 @@ hr {
 	Main Photo
 */
 
-
-#topPhoto{
-	order:2;
+#topPhoto {
+	text-align: center;
+	order: 2;
 }
-#topPhoto img{
+
+#topPhoto img {
 	width: 90vw;
 }
+
 
 /* 
 	Featured Work
 */
 
-#featuredwork{
-	order:3;
+#featuredwork {
+	order: 3;
 	margin: 2vh auto 0 auto;
 	width: 90vw;
 	display: flex;
 	flex-wrap: wrap;
-	text-align:center;
+	text-align: center;
 }
 
-#featuredwork h1{
-	display: block;
+#featuredwork h1 {
+	width: 100%;
 	order: 0;
 }
 
-.portfolioItem img{
-	width: 90vw;
+.portfolioItem img {
+	width: 100%;
 }
 
-.portfolioItem{
-	width: 33%;
-	margin: 2vh auto 2vh auto;
+.portfolioItem {
+	width: 90vw;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
 }
+
+#firstItem {
+	order: 1;
+}
+
+#secondItem {
+	order: 2;
+}
+
+#thirdItem {
+	order: 3;
+}
+
 
 /* 
 	Font Styles
 */
 
-h1{
+h1 {
 	font-family: "Bookman Old Style";
-	font-size: 2em;
+	font-size: 3em;
 }
 
-h2{
+h2 {
 	font-family: "Bookman Old Style";
-	font-size: 1em;
+	font-size: 1.5em;
 }
-
 
 
 /* 
-	Medium screens 
+	medium to large screens 
 */
+
 @media all and (min-width: 600px) {
-	h1{
-		font-size:2em;
+	h1 {
+		font-size: 3em;
 	}
-	
-	
-	#featuredwork{
+	h2 {
+		font-size: 1.5em;
+	}
+	#logo {
+		order: 0;
+		display: inline;
+	}
+	#featuredwork {
 		width: 90vw;
 	}
-
-	#featuredwork section{
+	#featuredwork section {
 		margin-top: 2vh;
 		margin-bottom: 2vh;
 	}
-	
-	header{
-		width:80%;
+	header {
+		width: 90vw;
 	}
-	#featureTitle{
-		width: 80vw;
-		text-align:left;
+	#featureTitle {
+		width: 90vw;
+		text-align: left;
 	}
-	#topPhoto img{
-		width: 70vw;
+	#name {
+		text-align: right;
+		margin-right: 0;
 	}
-	
-	.portfolioItem{
-		width:30%;
+	.portfolioItem {
+		width: 30%;
 	}
-	
-	.portfolioItem img{
-		width:100%;
+	.portfolioItem img {
+		width: 100%;
+	}
+	#secondItem {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#featureTitle h2 {
+		font-size: 2em;
+	}
+	#featureTitle h3 {
+		font-size: 1em;
 	}
 }
-
-
-
