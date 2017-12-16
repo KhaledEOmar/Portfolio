@@ -22,25 +22,31 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -87,7 +93,8 @@ header {
 
 #logo {
 	order: 0;
-	display: none;
+	margin-left: auto;
+	margin-right:auto;
 }
 
 #name {
@@ -138,25 +145,25 @@ hr {
 	order: 0;
 }
 
-.portfolioItem img {
+.portfolioitem img {
 	width: 100%;
 }
 
-.portfolioItem {
+.portfolioitem {
 	width: 90vw;
 	margin-top: 2vh;
 	margin-bottom: 2vh;
 }
 
-#firstItem {
+#firstitem {
 	order: 1;
 }
 
-#secondItem {
+#seconditem {
 	order: 2;
 }
 
-#thirdItem {
+#thirditem {
 	order: 3;
 }
 
@@ -180,49 +187,73 @@ h2 {
 	medium to large screens 
 */
 
-@media all and (min-width: 600px) {
-	h1 {
-		font-size: 3em;
-	}
-	h2 {
-		font-size: 1.5em;
-	}
+@media all and (min-width: 380px) {
 	#logo {
-		order: 0;
-		display: inline;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
-	#featuredwork {
-		width: 90vw;
-	}
-	#featuredwork section {
-		margin-top: 2vh;
-		margin-bottom: 2vh;
-	}
-	header {
-		width: 90vw;
-	}
-	#featureTitle {
-		width: 90vw;
-		text-align: left;
-	}
+
 	#name {
 		text-align: right;
 		margin-right: 0;
 	}
-	.portfolioItem {
+}
+
+
+/* 
+	medium to large screens 
+*/
+
+@media all and (min-width: 600px) {
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	#logo {
+		order: 0;
+	}
+
+	#featuredwork {
+		width: 90vw;
+	}
+
+	#featuredwork section {
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+	}
+
+	header {
+		width: 90vw;
+	}
+
+	#featuretitle {
+		width: 90vw;
+		text-align: left;
+	}
+
+	.portfolioitem {
 		width: 30%;
 	}
-	.portfolioItem img {
+
+	.portfolioitem img {
 		width: 100%;
 	}
-	#secondItem {
+
+	#seconditem {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
-	#featureTitle h2 {
+
+
+	#featuretitle h2 {
 		font-size: 2em;
 	}
-	#featureTitle h3 {
+
+	#featuretitle h3 {
 		font-size: 1em;
 	}
 }
